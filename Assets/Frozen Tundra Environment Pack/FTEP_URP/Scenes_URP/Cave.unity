@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028516, g: 0.22571573, b: 0.30692336, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465797, g: 0.49641418, b: 0.57481813, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 3
+    serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    buildHeightMesh: 0
+    accuratePlacement: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -128,7 +128,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1638749877}
     m_Modifications:
     - target: {fileID: 5173495787004152204, guid: 8e9f18f1103db7a49bef2127e8ab1e09, type: 3}
@@ -192,9 +191,6 @@ PrefabInstance:
       value: Rock_Formation_002 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e9f18f1103db7a49bef2127e8ab1e09, type: 3}
 --- !u!4 &157116809 stripped
 Transform:
@@ -206,7 +202,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 2011919412}
     m_Modifications:
     - target: {fileID: 5110162476342210797, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
@@ -215,7 +210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8120456778048504574, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
       propertyPath: m_RootOrder
-      value: 125
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8120456778048504574, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
       propertyPath: m_LocalScale.x
@@ -270,9 +265,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
 --- !u!4 &204787371 stripped
 Transform:
@@ -328,20 +320,9 @@ MonoBehaviour:
   m_Dithering: 0
   m_ClearDepth: 1
   m_AllowXRRendering: 1
-  m_AllowHDROutput: 1
-  m_UseScreenCoordOverride: 0
-  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
-  m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
 --- !u!81 &508928915
 AudioListener:
   m_ObjectHideFlags: 0
@@ -364,17 +345,9 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 20.78461
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 20.78461
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -408,20 +381,19 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 508928913}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.9787985, z: -0.20482564, w: 0}
   m_LocalPosition: {x: 76.8, y: 96.7, z: 151.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 23.639002, y: 180.00002, z: 0}
 --- !u!1001 &549252804
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1695764037}
     m_Modifications:
     - target: {fileID: 4147409528425140069, guid: 59246a006f05377429b5446f4ff5b6e7, type: 3}
@@ -473,9 +445,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59246a006f05377429b5446f4ff5b6e7, type: 3}
 --- !u!4 &549252805 stripped
 Transform:
@@ -487,7 +456,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1695764037}
     m_Modifications:
     - target: {fileID: 844518021741138053, guid: 26256cf1bcab06045b36b270248f2a6a, type: 3}
@@ -539,9 +507,6 @@ PrefabInstance:
       value: Ice_Cave_Section_004 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26256cf1bcab06045b36b270248f2a6a, type: 3}
 --- !u!4 &551375166 stripped
 Transform:
@@ -553,12 +518,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 2011919412}
     m_Modifications:
     - target: {fileID: 5173495787004152204, guid: 8e9f18f1103db7a49bef2127e8ab1e09, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5173495787004152204, guid: 8e9f18f1103db7a49bef2127e8ab1e09, type: 3}
       propertyPath: m_LocalScale.x
@@ -617,9 +581,6 @@ PrefabInstance:
       value: Rock_Formation_002 (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e9f18f1103db7a49bef2127e8ab1e09, type: 3}
 --- !u!4 &557293235 stripped
 Transform:
@@ -631,7 +592,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1638749877}
     m_Modifications:
     - target: {fileID: 731960722100518950, guid: cfa2b794bfe29864fbab60f828db50b1, type: 3}
@@ -695,9 +655,6 @@ PrefabInstance:
       value: Rock_Formation_006 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfa2b794bfe29864fbab60f828db50b1, type: 3}
 --- !u!4 &752499536 stripped
 Transform:
@@ -709,7 +666,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1028615696}
     m_Modifications:
     - target: {fileID: 5173495787004152204, guid: 8e9f18f1103db7a49bef2127e8ab1e09, type: 3}
@@ -773,9 +729,6 @@ PrefabInstance:
       value: Rock_Formation_002 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e9f18f1103db7a49bef2127e8ab1e09, type: 3}
 --- !u!4 &762198549 stripped
 Transform:
@@ -787,7 +740,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1638749877}
     m_Modifications:
     - target: {fileID: 2184325229957027603, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
@@ -851,9 +803,6 @@ PrefabInstance:
       value: Rock_Formation_002_Snow_Coverage (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
 --- !u!4 &845176327 stripped
 Transform:
@@ -894,13 +843,10 @@ MonoBehaviour:
   m_UsePipelineSettings: 1
   m_AdditionalLightsShadowResolutionTier: 2
   m_LightLayerMask: 1
-  m_RenderingLayers: 1
   m_CustomShadowLayers: 0
   m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
 --- !u!108 &960623388
 Light:
   m_ObjectHideFlags: 0
@@ -970,13 +916,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960623386}
-  serializedVersion: 2
   m_LocalRotation: {x: 0.20514177, y: -0.7923746, z: 0.36949027, w: 0.43992767}
   m_LocalPosition: {x: 146.34795, y: -3.95351, z: -88.38962}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50.000004, y: -121.922005, z: 0}
 --- !u!1 &1028615695
 GameObject:
@@ -1001,26 +947,25 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028615695}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.6893776, z: -0, w: 0.7244022}
   m_LocalPosition: {x: -35.3, y: -0.41, z: -19.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1187848705}
   - {fileID: 1986904742}
-  - {fileID: 1632931405}
   - {fileID: 2133477512}
-  - {fileID: 762198549}
   - {fileID: 1335696199}
+  - {fileID: 762198549}
+  - {fileID: 1632931405}
+  - {fileID: 1187848705}
   m_Father: {fileID: 1695764037}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -87.162, z: 0}
 --- !u!1001 &1060659424
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1695764037}
     m_Modifications:
     - target: {fileID: 6364276951613558645, guid: e286764cb40b2ea46acbfed69ec346f7, type: 3}
@@ -1072,9 +1017,6 @@ PrefabInstance:
       value: Ice_Stacks_001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e286764cb40b2ea46acbfed69ec346f7, type: 3}
 --- !u!4 &1060659425 stripped
 Transform:
@@ -1086,7 +1028,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1028615696}
     m_Modifications:
     - target: {fileID: 2184325229957027603, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
@@ -1150,9 +1091,6 @@ PrefabInstance:
       value: Rock_Formation_002_Snow_Coverage (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
 --- !u!4 &1187848705 stripped
 Transform:
@@ -1164,7 +1102,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1695764037}
     m_Modifications:
     - target: {fileID: 436632322558994700, guid: f5d64b52e6641c04a926b632c026fe0f, type: 3}
@@ -1216,9 +1153,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5d64b52e6641c04a926b632c026fe0f, type: 3}
 --- !u!4 &1285018762 stripped
 Transform:
@@ -1230,7 +1164,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1028615696}
     m_Modifications:
     - target: {fileID: 731960722100518950, guid: cfa2b794bfe29864fbab60f828db50b1, type: 3}
@@ -1294,9 +1227,6 @@ PrefabInstance:
       value: Rock_Formation_006 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfa2b794bfe29864fbab60f828db50b1, type: 3}
 --- !u!4 &1335696199 stripped
 Transform:
@@ -1308,7 +1238,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1638749877}
     m_Modifications:
     - target: {fileID: 2714130300577059770, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
@@ -1404,9 +1333,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
 --- !u!4 &1420946746 stripped
 Transform:
@@ -1418,7 +1344,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1695764037}
     m_Modifications:
     - target: {fileID: 4625953712560508862, guid: 59d1b517cdaa1184fb70b4cd36f15eea, type: 3}
@@ -1470,9 +1395,6 @@ PrefabInstance:
       value: Ice_Cave_Section_002 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59d1b517cdaa1184fb70b4cd36f15eea, type: 3}
 --- !u!4 &1485611964 stripped
 Transform:
@@ -1484,7 +1406,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1695764037}
     m_Modifications:
     - target: {fileID: 2523571458985763580, guid: c2a2f2940f4f8e44285f05362506cf9b, type: 3}
@@ -1536,9 +1457,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2a2f2940f4f8e44285f05362506cf9b, type: 3}
 --- !u!4 &1545081973 stripped
 Transform:
@@ -1550,12 +1468,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 2011919412}
     m_Modifications:
     - target: {fileID: 731960722100518950, guid: cfa2b794bfe29864fbab60f828db50b1, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 731960722100518950, guid: cfa2b794bfe29864fbab60f828db50b1, type: 3}
       propertyPath: m_LocalScale.x
@@ -1614,9 +1531,6 @@ PrefabInstance:
       value: Rock_Formation_006 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfa2b794bfe29864fbab60f828db50b1, type: 3}
 --- !u!4 &1615889529 stripped
 Transform:
@@ -1628,12 +1542,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 2011919412}
     m_Modifications:
     - target: {fileID: 2184325229957027603, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
       propertyPath: m_RootOrder
-      value: 127
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2184325229957027603, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
       propertyPath: m_LocalScale.x
@@ -1649,7 +1562,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2184325229957027603, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 2184325229957027603, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1657,7 +1570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2184325229957027603, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -12.2
       objectReference: {fileID: 0}
     - target: {fileID: 2184325229957027603, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1691,10 +1604,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rock_Formation_002_Snow_Coverage (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4792925354783317743, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0f7aab9afba02a645b080d699e16767e, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
 --- !u!4 &1619890036 stripped
 Transform:
@@ -1706,7 +1620,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1638749877}
     m_Modifications:
     - target: {fileID: 2184325229957027603, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
@@ -1770,9 +1683,6 @@ PrefabInstance:
       value: Rock_Formation_002_Snow_Coverage (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
 --- !u!4 &1623830039 stripped
 Transform:
@@ -1784,16 +1694,27 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1028615696}
     m_Modifications:
+    - target: {fileID: 2714130300577059770, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714130300577059770, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714130300577059770, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -37.22
+      objectReference: {fileID: 0}
     - target: {fileID: 5110162476342210797, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
       propertyPath: m_Name
       value: Rock_Formation_004_Snow_Coverage (2)
       objectReference: {fileID: 0}
     - target: {fileID: 8120456778048504574, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
       propertyPath: m_RootOrder
-      value: 125
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8120456778048504574, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
       propertyPath: m_LocalScale.x
@@ -1809,7 +1730,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8120456778048504574, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.38
+      value: 18.72
       objectReference: {fileID: 0}
     - target: {fileID: 8120456778048504574, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1848,9 +1769,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
 --- !u!4 &1632931405 stripped
 Transform:
@@ -1880,19 +1798,19 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638749876}
-  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.88685423, z: -0, w: 0.46204928}
   m_LocalPosition: {x: 6.27, y: -0.17, z: -32.11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 845176327}
-  - {fileID: 1729531333}
   - {fileID: 1623830039}
-  - {fileID: 1420946746}
-  - {fileID: 157116809}
+  - {fileID: 1729531333}
   - {fileID: 752499536}
+  - {fileID: 157116809}
+  - {fileID: 1420946746}
+  - {fileID: 845176327}
   m_Father: {fileID: 1695764037}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -124.961, z: 0}
 --- !u!1 &1695764036
 GameObject:
@@ -1917,7 +1835,6 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1695764036}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1926,20 +1843,20 @@ Transform:
   - {fileID: 1028615696}
   - {fileID: 1638749877}
   - {fileID: 2011919412}
-  - {fileID: 1485611964}
   - {fileID: 1285018762}
   - {fileID: 551375166}
-  - {fileID: 1545081973}
+  - {fileID: 1485611964}
   - {fileID: 549252805}
+  - {fileID: 1545081973}
   - {fileID: 1060659425}
   m_Father: {fileID: 0}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1729531332
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1638749877}
     m_Modifications:
     - target: {fileID: 2184325229957027603, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
@@ -2003,9 +1920,6 @@ PrefabInstance:
       value: Rock_Formation_002_Snow_Coverage (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 691bd24d9e726bd409bf0c1c207e422e, type: 3}
 --- !u!4 &1729531333 stripped
 Transform:
@@ -2017,9 +1931,12 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 5160f7f9966d6ad49b38380effb1e1cc, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 5160f7f9966d6ad49b38380effb1e1cc, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1945
@@ -2077,16 +1994,12 @@ PrefabInstance:
       value: Snowy_Cave_Entrance_01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5160f7f9966d6ad49b38380effb1e1cc, type: 3}
 --- !u!1001 &1986904741
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1028615696}
     m_Modifications:
     - target: {fileID: 5110162476342210797, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
@@ -2150,9 +2063,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
 --- !u!4 &1986904742 stripped
 Transform:
@@ -2164,12 +2074,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 2011919412}
     m_Modifications:
     - target: {fileID: 5173495787004152204, guid: 8e9f18f1103db7a49bef2127e8ab1e09, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5173495787004152204, guid: 8e9f18f1103db7a49bef2127e8ab1e09, type: 3}
       propertyPath: m_LocalScale.x
@@ -2228,9 +2137,6 @@ PrefabInstance:
       value: Rock_Formation_002 (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e9f18f1103db7a49bef2127e8ab1e09, type: 3}
 --- !u!4 &2011623689 stripped
 Transform:
@@ -2260,25 +2166,24 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2011919411}
-  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1619890036}
-  - {fileID: 204787371}
   - {fileID: 2011623689}
-  - {fileID: 557293235}
   - {fileID: 1615889529}
+  - {fileID: 557293235}
+  - {fileID: 204787371}
+  - {fileID: 1619890036}
   m_Father: {fileID: 1695764037}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2133477511
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 1028615696}
     m_Modifications:
     - target: {fileID: 5110162476342210797, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
@@ -2342,20 +2247,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
 --- !u!4 &2133477512 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8120456778048504574, guid: b43e21209a5c76246bc5f88c5f674b46, type: 3}
   m_PrefabInstance: {fileID: 2133477511}
   m_PrefabAsset: {fileID: 0}
---- !u!1660057539 &9223372036854775807
-SceneRoots:
-  m_ObjectHideFlags: 0
-  m_Roots:
-  - {fileID: 960623389}
-  - {fileID: 508928917}
-  - {fileID: 1695764037}
-  - {fileID: 1798497288}

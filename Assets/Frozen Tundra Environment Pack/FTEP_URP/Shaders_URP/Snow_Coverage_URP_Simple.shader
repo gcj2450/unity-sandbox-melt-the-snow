@@ -1,6 +1,5 @@
-// Made with Amplify Shader Editor
-// Available at the Unity Asset Store - http://u3d.as/y3X 
-Shader "Snow Coverage URP"
+//改编自Snow_Coverage_URP，打算简化shader
+Shader "Snow Coverage URP Simple"
 {
 	Properties
 	{

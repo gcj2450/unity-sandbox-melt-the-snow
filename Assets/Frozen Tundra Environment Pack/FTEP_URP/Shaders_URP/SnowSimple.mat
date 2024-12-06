@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Cliff_Piece_002_Snow
-  m_Shader: {fileID: 4800000, guid: 13dbaaa838e018742b1d2db35c905415, type: 3}
+  m_Name: SnowSimple
+  m_Shader: {fileID: 4800000, guid: 242931414e384604b8710b7c731792c7, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _DETAIL_MAP
