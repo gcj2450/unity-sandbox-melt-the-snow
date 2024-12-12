@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SnowShader
-  m_Shader: {fileID: 4800000, guid: c3d60e3d116dbe647b2a091be062ca93, type: 3}
+  m_Name: Snow Full URP
+  m_Shader: {fileID: 4800000, guid: 57b2ac6f6fbdd2c46817d61fe945e363, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -24,9 +24,13 @@ Material:
         m_Texture: {fileID: 2800000, guid: ee31e2ec2f4e9244fb4401b6dae2258c, type: 3}
         m_Scale: {x: 3, y: 2}
         m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _DepthTex:
         m_Texture: {fileID: 2800000, guid: 17092017dcb230e4c9ed736d0491cdaa, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 16, y: 10}
         m_Offset: {x: 0, y: 0}
     - _GlitterTex:
         m_Texture: {fileID: 2800000, guid: 3ddcb2d4b91466a489a91da270cbc6d2, type: 3}
@@ -57,9 +61,11 @@ Material:
     - _Aniso: 0.5590659
     - _Coverage: 0.488
     - _Depth: 0.3571429
+    - _Falloff: 0.5
     - _Glitter: 3.214286
     - _NoiseScale: 3
     - _RampPower: 1
+    - _Reflection: 0.5
     - _Shininess: 0.05555774
     - _Smooth: 0.4555357
     - _Specular: 3.482143

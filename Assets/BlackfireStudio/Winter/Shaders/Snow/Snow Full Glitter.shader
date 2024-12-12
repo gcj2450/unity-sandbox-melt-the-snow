@@ -19,6 +19,7 @@ Shader "Blackfire Studio/Snow/Snow Full Glitter" {
 		_BumpTex			("Normal (RGB)", 2D)						= "bump" {}
 		_DepthTex			("Depth (R)", 2D)							= "white" {}
 		_Depth				("Translucency", Range(-2.0, 1.0))			= 1.0
+		_Falloff			("Reflection Falloff", Range(0.1, 3.0))		= 0.5
 	}
 	
 	SubShader {
